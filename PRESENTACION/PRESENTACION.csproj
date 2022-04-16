@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0E0661C5-58F9-48E2-9C2C-8C8CE09F7E26}</ProjectGuid>
+    <ProjectGuid>{E6763A45-4D5E-4C7A-8A9F-001B062FC7AD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>PRESENTACION</RootNamespace>
     <AssemblyName>PRESENTACION</AssemblyName>
@@ -46,14 +46,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmAlquiler.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmAlquiler.Designer.cs">
+      <DependentUpon>FrmAlquiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfiguraciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfiguraciones.Designer.cs">
+      <DependentUpon>FrmConfiguraciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHistorial.Designer.cs">
+      <DependentUpon>FrmHistorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuPrincipal.Designer.cs">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReserva.Designer.cs">
+      <DependentUpon>FrmReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVehiculo.Designer.cs">
+      <DependentUpon>FrmVehiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAlquiler.resx">
+      <DependentUpon>FrmAlquiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfiguraciones.resx">
+      <DependentUpon>FrmConfiguraciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHistorial.resx">
+      <DependentUpon>FrmHistorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuPrincipal.resx">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReserva.resx">
+      <DependentUpon>FrmReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVehiculo.resx">
+      <DependentUpon>FrmVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +119,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,9 +136,30 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LOGICA\LOGICA.csproj">
-      <Project>{9b2b027b-872b-45c4-a9c1-b6028253ee0a}</Project>
+      <Project>{3e3f5566-c9ee-4b11-be53-567ba11922aa}</Project>
       <Name>LOGICA</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\engranaje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Historial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alquiler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reserva.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vehiculo %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Busqueda.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
